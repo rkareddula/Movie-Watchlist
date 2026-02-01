@@ -30,13 +30,13 @@ searchEl.addEventListener("click", function () {
     cardHtml = "";
 
     fetch(
-        `http://www.omdbapi.com/?apikey=${apiKey}&s=${inputBtnEl.value}&type=movie`
+        `https://www.omdbapi.com/?apikey=${apiKey}&s=${inputBtnEl.value}&type=movie`
     )
         .then((res) => res.json())
         .then((listOfMovies) => {
             listOfMovies.Search.forEach(function (movie) {
                 fetch(
-                    `http://www.omdbapi.com/?apikey=${apiKey}&i=${movie.imdbID}`
+                    `https://www.omdbapi.com/?apikey=${apiKey}&i=${movie.imdbID}`
                 )
                     .then((res) => res.json())
                     .then((item) => {
@@ -71,4 +71,5 @@ searchEl.addEventListener("click", function () {
 function renderMovies() {
     movieListEl.innerHTML = cardHtml;
 }
+
 
