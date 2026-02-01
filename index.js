@@ -10,7 +10,7 @@ let watchlist = [];
 document.addEventListener("click", function (e) {
     if (e.target.dataset.add) {
         fetch(
-            `http://www.omdbapi.com/?apikey=${apiKey}&i=${e.target.dataset.add}`
+            `https://www.omdbapi.com/?apikey=${apiKey}&i=${e.target.dataset.add}`
         )
             .then((res) => res.json())
             .then((movie) => {
@@ -71,3 +71,4 @@ searchEl.addEventListener("click", function () {
 function renderMovies() {
     movieListEl.innerHTML = cardHtml;
 }
+
