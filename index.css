@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    font-family: Inter;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 5em 2em;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./images/image.png");
+    background-position: center;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header a {
+    font-size: 0.9rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+.input-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-btn input {
+    width: 17em;
+    padding: 0.5em;
+    font-family: inherit;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+.input-btn button {
+    padding: 0.5em 2.5em;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+  background-color: black;
+    color: white;
+}
+
+.search-btn:active {
+    transform: scale(0.96);
+}
+
+.poster-image {
+    width: 8em;
+    height: auto;
+    border-radius: 2.33px;
+}
+
+button {
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.watchlist-btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.watchlist-btn:active {
+    cursor: pointer;
+    transform: scale(0.96);
+}
+
+.movie-list {
+    padding-top: 2em;
+}
+
+.movie-card {
+    width: 80%;
+    margin: auto;
+
+    padding: 1.5em 0em;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.movie-plot {
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.movie-title {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
